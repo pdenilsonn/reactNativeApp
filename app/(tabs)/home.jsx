@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <View>
       <Text>Home</Text>
+      <Text className="mt-60px "> Home </Text>
     </View>
   )
 }
