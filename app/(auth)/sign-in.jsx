@@ -29,11 +29,11 @@ const SignIn = () => {
       setIsLogged(true);
 
       Alert.alert("Success", "User signed in successfully");
-      router.replace('/home')
+      router.replace('/home');
     } catch (error) {
-      Alert.alert('Error', error.message)
+      Alert.alert('Error', error.message);
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   }
 

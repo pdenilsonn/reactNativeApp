@@ -8,9 +8,9 @@ import CustomButtom from '../components/CustomButtom';
 import { useGlobalContext } from '../context/GlobalProvider'
 
 export default function App() {
-    const {Loading, isLogged} = useGlobalContext();
+    const {loading, isLoggedIn} = useGlobalContext();
 
-    if(!Loading && isLogged) return <Redirect href="/home" />;
+    if(!loading && isLoggedIn) return <Redirect href="/home" />;
 
     return (
         <SafeAreaView className="bg-primary h-full">
